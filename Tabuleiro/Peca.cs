@@ -1,3 +1,5 @@
+using Xadrez.tabuleiro.Enums;
+
 namespace Xadrez.tabuleiro
 {
     class Peca
