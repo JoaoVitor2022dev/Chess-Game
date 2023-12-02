@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-using Xadrez.Tabuleiro;
+using Xadrez.tabuleiro;
 
 namespace Xadrez
 {
@@ -8,13 +8,10 @@ namespace Xadrez
     {
         static void Main(string[] args)
         {
-            Posicao p; 
+           
+            Tabuleiro tabuleiro = new Tabuleiro(8,8);
 
-            p = new Posicao(3,4);
-
-            Console.WriteLine($"Informaçoes: {p}");
-
-            Console.WriteLine();
+            Console.WriteLine(tabuleiro);
         }
     }
 }
