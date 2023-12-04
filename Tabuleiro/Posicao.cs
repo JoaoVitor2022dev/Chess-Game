@@ -5,16 +5,16 @@ namespace Xadrez.tabuleiro
 {
     class Posicao
     {
-        public int Linha { get; set; }
-        public int Coluna { get; set; }
+        public int linha { get; set; }
+        public int coluna { get; set; }
         public Posicao(int linha, int coluna)
         {
-            this.Linha = linha; 
-            this.Coluna = coluna;
+            this.linha = linha; 
+            this.coluna = coluna;
         } 
         public override string ToString()
         {
-            return $" Linha: {this.Linha}, Coluna: {this.Coluna}";
+            return $" Linha: {this.linha}, Coluna: {this.coluna}";
         }
     }
 }

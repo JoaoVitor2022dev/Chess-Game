@@ -8,9 +8,9 @@ namespace Xadrez.tabuleiro
         public Cor cor { get; protected set; }  // pode ser acessada somente pelas classes dela...
         public int qteMovimento { get; protected set; } 
         public Tabuleiro tabuleiro { get; protected set; }
-        public Peca(Posicao posicao,Cor cor, Tabuleiro tabuleiro)
+        public Peca(Tabuleiro tabuleiro, Cor cor)
         {
-            this.posicao = posicao; 
+            this.posicao = null; 
             this.cor = cor; 
             this.tabuleiro = tabuleiro; 
             this.qteMovimento = 0;
