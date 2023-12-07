@@ -10,16 +10,26 @@ namespace Xadrez
     {
         static void Main(string[] args)
         {
-           
-           PosicaoXadrex pos = new PosicaoXadrex('a', 1);
+           try
+           {
+            // classe tabuleiro de onde ve as operacóes em regal
+            Tabuleiro tab = new Tabuleiro(8,8);
+            // criando a peca e colocando ela na posiçao 
 
-           Console.WriteLine(pos);
+            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0,0));
+            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1,3));
+            tab.colocarPeca(new Rei(tab, Cor.Preta),  new Posicao(0,7));
+            
+            tab.colocarPeca(new Rei(tab, Cor.Branca),  new Posicao(3 ,5));
 
-           Console.WriteLine(pos.toPosicao());
-
-           // Console.WriteLine(pos.toPosicao());
-
-           Console.WriteLine();
+            // imprimindo o tabuleiro na tela 
+            Tela.imprirmirTabuleiro(tab);
+            }
+            catch (TabuleiroExecption e)
+            {
+              Console.WriteLine(e.Message);
+            } 
+              Console.WriteLine();
         }
     }
 }
