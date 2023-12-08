@@ -4,7 +4,7 @@ namespace Xadrez.xadrex
 {
     class PosicaoXadrex
     {
-        public int linha { get; set; }
+        public int linha { get; private set; }
         public char coluna { get; set; }
         public PosicaoXadrex(char coluna, int linha)
         {

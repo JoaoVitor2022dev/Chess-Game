@@ -15,5 +15,9 @@ namespace Xadrez.tabuleiro
             this.tabuleiro = tabuleiro; 
             this.qteMovimento = 0;
         }
+        public void quantidadeMovimentos()
+        {
+            this.qteMovimento++;
+        }
     }
 }
